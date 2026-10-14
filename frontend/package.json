@@ -1,0 +1,21 @@
+{
+  "name": "lab-report-review-frontend",
+  "description": "检验报告管理 · 前端：四视图（总览 / 核对 / 趋势 / 分类）+ 三路导入，React + Vite，零图表库依赖",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "test": "node --test",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.1.2",
+    "vite": "^8.3.4"
+  }
+}

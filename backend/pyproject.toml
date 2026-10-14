@@ -1,0 +1,6 @@
+[tool.pytest.ini_options]
+# 让 tests/ 中的 `import app` / `import ingest` 等以 backend/ 为根解析。
+# 不依赖 pytest 的隐式 sys.path 插入（CI 与本地行为不一致，曾导致
+# 全部测试收集失败 ModuleNotFoundError: No module named 'app'）。
+pythonpath = ["."]
+testpaths = ["tests"]

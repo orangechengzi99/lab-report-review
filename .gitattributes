@@ -1,0 +1,26 @@
+# 统一换行符：仓库内一律 LF。
+# 避免 Windows 开发 + macOS/Linux clone 时出现"整文件被改"的假 diff。
+* text=auto eol=lf
+
+# Windows 批处理必须保持 CRLF
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# 二进制：不做换行转换、不参与文本 diff
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.webp binary
+*.ico  binary
+*.pdf  binary
+*.db   binary
+*.nii  binary
+*.nii.gz binary
+*.xlsx binary
+
+# 依赖锁文件：体积大、噪声多，折叠显示
+package-lock.json -diff linguist-generated=true
+
+# 让 GitHub 语言统计正确识别前端源码
+*.jsx linguist-detectable=true
+*.css linguist-detectable=true

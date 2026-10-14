@@ -1,0 +1,779 @@
+{
+  "version": 1,
+  "source": "标准指标字典（含 LOINC 编码），供字段名归一化使用；数据来源见仓库根目录 THIRD_PARTY_NOTICES.md",
+  "count": 73,
+  "metrics": [
+    {
+      "standardName": "白细胞计数",
+      "aliases": [
+        "白细胞",
+        "白细胞计数",
+        "WBC",
+        "white blood cell"
+      ],
+      "category": "血常规",
+      "loinc": "6690-2"
+    },
+    {
+      "standardName": "红细胞计数",
+      "aliases": [
+        "红细胞",
+        "红细胞计数",
+        "RBC"
+      ],
+      "category": "血常规",
+      "loinc": "789-8"
+    },
+    {
+      "standardName": "血红蛋白",
+      "aliases": [
+        "血红蛋白",
+        "HGB",
+        "Hb",
+        "HB",
+        "hemoglobin"
+      ],
+      "category": "血常规",
+      "loinc": "718-7"
+    },
+    {
+      "standardName": "血小板计数",
+      "aliases": [
+        "血小板",
+        "血小板计数",
+        "PLT"
+      ],
+      "category": "血常规",
+      "loinc": "777-3"
+    },
+    {
+      "standardName": "红细胞压积",
+      "aliases": [
+        "红细胞压积",
+        "红细胞比容",
+        "HCT"
+      ],
+      "category": "血常规",
+      "loinc": "4544-3"
+    },
+    {
+      "standardName": "平均红细胞体积",
+      "aliases": [
+        "平均红细胞体积",
+        "MCV"
+      ],
+      "category": "血常规",
+      "loinc": "787-2"
+    },
+    {
+      "standardName": "中性粒细胞百分比",
+      "aliases": [
+        "中性粒细胞百分比",
+        "NEUT%",
+        "NEU%"
+      ],
+      "category": "血常规",
+      "loinc": "770-8"
+    },
+    {
+      "standardName": "淋巴细胞百分比",
+      "aliases": [
+        "淋巴细胞百分比",
+        "LYM%",
+        "LY%"
+      ],
+      "category": "血常规",
+      "loinc": "736-9"
+    },
+    {
+      "standardName": "凝血酶原时间",
+      "aliases": [
+        "凝血酶原时间",
+        "PT",
+        "血浆凝血酶原时间"
+      ],
+      "category": "凝血功能",
+      "loinc": "5963-0"
+    },
+    {
+      "standardName": "国际标准化比值",
+      "aliases": [
+        "国际标准化比值",
+        "国际标准化比率",
+        "INR"
+      ],
+      "category": "凝血功能",
+      "loinc": "34714-6"
+    },
+    {
+      "standardName": "纤维蛋白原",
+      "aliases": [
+        "纤维蛋白原",
+        "Fbg",
+        "FIB",
+        "fibrinogen"
+      ],
+      "category": "凝血功能",
+      "loinc": "3255-7"
+    },
+    {
+      "standardName": "活化部分凝血活酶时间",
+      "aliases": [
+        "活化部分凝血活酶时间",
+        "部分凝血活酶时间",
+        "APTT",
+        "aPTT"
+      ],
+      "category": "凝血功能",
+      "loinc": "3173-2"
+    },
+    {
+      "standardName": "凝血酶时间",
+      "aliases": [
+        "凝血酶时间",
+        "TT",
+        "凝血酶时间测定"
+      ],
+      "category": "凝血功能",
+      "loinc": "46771-0"
+    },
+    {
+      "standardName": "D-二聚体",
+      "aliases": [
+        "D-二聚体",
+        "D-D二聚体",
+        "D二聚体",
+        "D-Dimer",
+        "D-dimer",
+        "DD"
+      ],
+      "category": "凝血功能",
+      "loinc": "48066-5"
+    },
+    {
+      "standardName": "纤维蛋白(原)降解产物",
+      "aliases": [
+        "纤维蛋白(原)降解产物",
+        "纤维蛋白降解产物",
+        "纤维蛋白原降解产物",
+        "FDP"
+      ],
+      "category": "凝血功能",
+      "loinc": "7118-5"
+    },
+    {
+      "standardName": "抗凝血酶III",
+      "aliases": [
+        "抗凝血酶III",
+        "抗凝血酶Ⅲ",
+        "抗凝血酶",
+        "AT-III",
+        "ATIII",
+        "AT3"
+      ],
+      "category": "凝血功能",
+      "loinc": "3174-0"
+    },
+    {
+      "standardName": "蛋白C",
+      "aliases": [
+        "蛋白C",
+        "蛋白C活性",
+        "Protein C",
+        "PC"
+      ],
+      "category": "凝血功能",
+      "loinc": "3175-7"
+    },
+    {
+      "standardName": "蛋白S",
+      "aliases": [
+        "蛋白S",
+        "蛋白S活性",
+        "Protein S",
+        "PS"
+      ],
+      "category": "凝血功能",
+      "loinc": "3176-5"
+    },
+    {
+      "standardName": "凝血因子V活性",
+      "aliases": [
+        "凝血因子V活性",
+        "凝血因子V",
+        "Factor V",
+        "FV"
+      ],
+      "category": "凝血功能",
+      "loinc": ""
+    },
+    {
+      "standardName": "凝血酶-抗凝血酶III复合物",
+      "aliases": [
+        "凝血酶-抗凝血酶III复合物",
+        "凝血酶-抗凝血酶复合物",
+        "TAT",
+        "TAT复合物"
+      ],
+      "category": "凝血功能",
+      "loinc": ""
+    },
+    {
+      "standardName": "纤溶酶-抗纤溶酶复合物",
+      "aliases": [
+        "纤溶酶-抗纤溶酶复合物",
+        "纤溶酶-α2纤溶酶抑制剂复合物",
+        "纤溶酶-α2抗纤溶酶复合物",
+        "PIC",
+        "PAP",
+        "PAP复合物"
+      ],
+      "category": "凝血功能",
+      "loinc": ""
+    },
+    {
+      "standardName": "血栓调节蛋白",
+      "aliases": [
+        "血栓调节蛋白",
+        "凝血酶调节蛋白",
+        "TM"
+      ],
+      "category": "凝血功能",
+      "loinc": ""
+    },
+    {
+      "standardName": "组织型纤溶酶原激活剂-抑制剂1复合物",
+      "aliases": [
+        "组织型纤溶酶原激活剂-抑制剂1复合物",
+        "组织型纤溶酶原激活剂-抑制剂复合物",
+        "t-PAIC",
+        "tPAIC",
+        "PAI-1复合物"
+      ],
+      "category": "凝血功能",
+      "loinc": ""
+    },
+    {
+      "standardName": "狼疮抗凝物筛查",
+      "aliases": [
+        "狼疮抗凝物筛查",
+        "狼疮筛查时间",
+        "狼疮筛查比值",
+        "dRVVT筛查",
+        "稀释蝰蛇毒时间筛查"
+      ],
+      "category": "凝血功能",
+      "loinc": ""
+    },
+    {
+      "standardName": "狼疮抗凝物确认",
+      "aliases": [
+        "狼疮抗凝物确认",
+        "狼疮确认时间",
+        "狼疮确认比值",
+        "标准化狼疮比值",
+        "dRVVT确认"
+      ],
+      "category": "凝血功能",
+      "loinc": ""
+    },
+    {
+      "standardName": "二磷酸腺苷诱导血小板聚集率(60s) ADP1%",
+      "aliases": [
+        "二磷酸腺苷诱导血小板聚集率(60s)",
+        "二磷酸腺苷诱导血小板聚集率(60s) ADP1%",
+        "ADP1%"
+      ],
+      "category": "凝血功能",
+      "loinc": ""
+    },
+    {
+      "standardName": "二磷酸腺苷诱导血小板聚集率(180s) ADP2%",
+      "aliases": [
+        "二磷酸腺苷诱导血小板聚集率(180s)",
+        "二磷酸腺苷诱导血小板聚集率(180s) ADP2%",
+        "ADP2%"
+      ],
+      "category": "凝血功能",
+      "loinc": ""
+    },
+    {
+      "standardName": "二磷酸腺苷诱导血小板聚集率(300s) ADP3%",
+      "aliases": [
+        "二磷酸腺苷诱导血小板聚集率(300s)",
+        "二磷酸腺苷诱导血小板聚集率(300s) ADP3%",
+        "ADP3%"
+      ],
+      "category": "凝血功能",
+      "loinc": ""
+    },
+    {
+      "standardName": "3uM二磷酸腺苷诱导最大聚集率 ADP max%",
+      "aliases": [
+        "3uM二磷酸腺苷诱导最大聚集率",
+        "二磷酸腺苷诱导最大聚集率",
+        "ADP max%"
+      ],
+      "category": "凝血功能",
+      "loinc": ""
+    },
+    {
+      "standardName": "花生四烯酸诱导血小板聚集率(60s) Ara1%",
+      "aliases": [
+        "花生四烯酸诱导血小板聚集率(60s)",
+        "花生四烯酸诱导血小板聚集率(60s) Ara1%",
+        "Ara1%"
+      ],
+      "category": "凝血功能",
+      "loinc": ""
+    },
+    {
+      "standardName": "花生四烯酸诱导血小板聚集率(180s) Ara2%",
+      "aliases": [
+        "花生四烯酸诱导血小板聚集率(180s)",
+        "花生四烯酸诱导血小板聚集率(180s) Ara2%",
+        "Ara2%"
+      ],
+      "category": "凝血功能",
+      "loinc": ""
+    },
+    {
+      "standardName": "花生四烯酸诱导血小板聚集率(300s) Ara3%",
+      "aliases": [
+        "花生四烯酸诱导血小板聚集率(300s)",
+        "花生四烯酸诱导血小板聚集率(300s) Ara3%",
+        "Ara3%"
+      ],
+      "category": "凝血功能",
+      "loinc": ""
+    },
+    {
+      "standardName": "1mM花生四烯酸诱导最大聚集率 Ara max%",
+      "aliases": [
+        "1mM花生四烯酸诱导最大聚集率",
+        "花生四烯酸诱导最大聚集率",
+        "Ara max%"
+      ],
+      "category": "凝血功能",
+      "loinc": ""
+    },
+    {
+      "standardName": "肾上腺素诱导血小板聚集率(60s)",
+      "aliases": [
+        "肾上腺素诱导血小板聚集率(60s)",
+        "肾上腺素诱导血小板聚集率(60s) EPI1%"
+      ],
+      "category": "凝血功能",
+      "loinc": ""
+    },
+    {
+      "standardName": "肾上腺素诱导血小板聚集率(180s)",
+      "aliases": [
+        "肾上腺素诱导血小板聚集率(180s)",
+        "肾上腺素诱导血小板聚集率(180s) EPI2%"
+      ],
+      "category": "凝血功能",
+      "loinc": ""
+    },
+    {
+      "standardName": "肾上腺素诱导血小板聚集率(300s)",
+      "aliases": [
+        "肾上腺素诱导血小板聚集率(300s)",
+        "肾上腺素诱导血小板聚集率(300s) EPI3%"
+      ],
+      "category": "凝血功能",
+      "loinc": ""
+    },
+    {
+      "standardName": "5uM肾上腺素诱导最大聚集率",
+      "aliases": [
+        "5uM肾上腺素诱导最大聚集率",
+        "肾上腺素诱导最大聚集率",
+        "EPI max%"
+      ],
+      "category": "凝血功能",
+      "loinc": ""
+    },
+    {
+      "standardName": "胶原诱导血小板聚集率(60s)",
+      "aliases": [
+        "胶原诱导血小板聚集率(60s)",
+        "胶原诱导血小板聚集率(60s) Col1%"
+      ],
+      "category": "凝血功能",
+      "loinc": ""
+    },
+    {
+      "standardName": "胶原诱导血小板聚集率(180s)",
+      "aliases": [
+        "胶原诱导血小板聚集率(180s)",
+        "胶原诱导血小板聚集率(180s) Col2%"
+      ],
+      "category": "凝血功能",
+      "loinc": ""
+    },
+    {
+      "standardName": "胶原诱导血小板聚集率(300s)",
+      "aliases": [
+        "胶原诱导血小板聚集率(300s)",
+        "胶原诱导血小板聚集率(300s) Col3%"
+      ],
+      "category": "凝血功能",
+      "loinc": ""
+    },
+    {
+      "standardName": "2ug/mL胶原诱导最大聚集率",
+      "aliases": [
+        "2ug/mL胶原诱导最大聚集率",
+        "胶原诱导最大聚集率",
+        "Col max%"
+      ],
+      "category": "凝血功能",
+      "loinc": ""
+    },
+    {
+      "standardName": "TEG 血小板功能",
+      "aliases": [
+        "TEG 血小板功能",
+        "TEG血小板功能"
+      ],
+      "category": "凝血功能",
+      "loinc": ""
+    },
+    {
+      "standardName": "血小板功能",
+      "aliases": [
+        "血小板功能"
+      ],
+      "category": "凝血功能",
+      "loinc": ""
+    },
+    {
+      "standardName": "抗双链DNA抗体",
+      "aliases": [
+        "抗双链DNA抗体",
+        "抗ds-DNA",
+        "抗 ds-DNA",
+        "anti-dsDNA",
+        "ds-DNA",
+        "dsDNA",
+        "抗DNA抗体"
+      ],
+      "category": "风湿免疫",
+      "loinc": ""
+    },
+    {
+      "standardName": "丙氨酸氨基转移酶",
+      "aliases": [
+        "丙氨酸氨基转移酶",
+        "谷丙转氨酶",
+        "ALT",
+        "GPT"
+      ],
+      "category": "肝功能",
+      "loinc": "1742-6"
+    },
+    {
+      "standardName": "天冬氨酸氨基转移酶",
+      "aliases": [
+        "天冬氨酸氨基转移酶",
+        "谷草转氨酶",
+        "AST",
+        "GOT"
+      ],
+      "category": "肝功能",
+      "loinc": "1920-8"
+    },
+    {
+      "standardName": "碱性磷酸酶",
+      "aliases": [
+        "碱性磷酸酶",
+        "ALP",
+        "AKP"
+      ],
+      "category": "肝功能",
+      "loinc": "6768-6"
+    },
+    {
+      "standardName": "谷氨酰转肽酶",
+      "aliases": [
+        "谷氨酰转肽酶",
+        "γ-谷氨酰转肽酶",
+        "GGT",
+        "γ-GT"
+      ],
+      "category": "肝功能",
+      "loinc": "2324-2"
+    },
+    {
+      "standardName": "总胆红素",
+      "aliases": [
+        "总胆红素",
+        "TBIL",
+        "TB"
+      ],
+      "category": "肝功能",
+      "loinc": "1975-2"
+    },
+    {
+      "standardName": "直接胆红素",
+      "aliases": [
+        "直接胆红素",
+        "结合胆红素",
+        "DBIL"
+      ],
+      "category": "肝功能",
+      "loinc": "1968-7"
+    },
+    {
+      "standardName": "白蛋白",
+      "aliases": [
+        "白蛋白",
+        "清蛋白",
+        "ALB"
+      ],
+      "category": "肝功能",
+      "loinc": "1751-7"
+    },
+    {
+      "standardName": "总蛋白",
+      "aliases": [
+        "总蛋白",
+        "TP",
+        "total protein"
+      ],
+      "category": "肝功能",
+      "loinc": "2885-2"
+    },
+    {
+      "standardName": "肌酐",
+      "aliases": [
+        "肌酐",
+        "肌苷",
+        "Cr",
+        "Creatinine",
+        "CRE"
+      ],
+      "category": "肾功能",
+      "loinc": "2160-0"
+    },
+    {
+      "standardName": "尿素氮",
+      "aliases": [
+        "尿素氮",
+        "尿素",
+        "BUN",
+        "UREA"
+      ],
+      "category": "肾功能",
+      "loinc": "6299-2"
+    },
+    {
+      "standardName": "尿酸",
+      "aliases": [
+        "尿酸",
+        "UA",
+        "uric acid"
+      ],
+      "category": "肾功能",
+      "loinc": "3084-1"
+    },
+    {
+      "standardName": "总胆固醇",
+      "aliases": [
+        "总胆固醇",
+        "胆固醇",
+        "TC",
+        "CHOL"
+      ],
+      "category": "血脂",
+      "loinc": "2093-3"
+    },
+    {
+      "standardName": "甘油三酯",
+      "aliases": [
+        "甘油三酯",
+        "TG",
+        "triglyceride"
+      ],
+      "category": "血脂",
+      "loinc": "2571-8"
+    },
+    {
+      "standardName": "低密度脂蛋白胆固醇",
+      "aliases": [
+        "低密度脂蛋白",
+        "低密度脂蛋白胆固醇",
+        "LDL",
+        "LDL-C"
+      ],
+      "category": "血脂",
+      "loinc": "18262-6"
+    },
+    {
+      "standardName": "高密度脂蛋白胆固醇",
+      "aliases": [
+        "高密度脂蛋白",
+        "高密度脂蛋白胆固醇",
+        "HDL",
+        "HDL-C"
+      ],
+      "category": "血脂",
+      "loinc": "2085-9"
+    },
+    {
+      "standardName": "葡萄糖",
+      "aliases": [
+        "葡萄糖",
+        "血糖",
+        "空腹血糖",
+        "GLU",
+        "FBG",
+        "FBG血糖"
+      ],
+      "category": "糖代谢",
+      "loinc": "2339-0"
+    },
+    {
+      "standardName": "糖化血红蛋白",
+      "aliases": [
+        "糖化血红蛋白",
+        "糖化",
+        "HbA1c",
+        "HbAlc"
+      ],
+      "category": "糖代谢",
+      "loinc": "59261-8"
+    },
+    {
+      "standardName": "钾",
+      "aliases": [
+        "钾",
+        "血钾",
+        "血清钾",
+        "K",
+        "K+"
+      ],
+      "category": "电解质与微量元素",
+      "loinc": "2823-3"
+    },
+    {
+      "standardName": "钠",
+      "aliases": [
+        "钠",
+        "血钠",
+        "血清钠",
+        "Na",
+        "Na+"
+      ],
+      "category": "电解质与微量元素",
+      "loinc": "2951-2"
+    },
+    {
+      "standardName": "氯",
+      "aliases": [
+        "氯",
+        "血氯",
+        "血清氯",
+        "Cl",
+        "Cl-"
+      ],
+      "category": "电解质与微量元素",
+      "loinc": "2075-0"
+    },
+    {
+      "standardName": "钙",
+      "aliases": [
+        "钙",
+        "血钙",
+        "血清钙",
+        "Ca"
+      ],
+      "category": "电解质与微量元素",
+      "loinc": "17861-6"
+    },
+    {
+      "standardName": "磷",
+      "aliases": [
+        "磷",
+        "血磷",
+        "无机磷",
+        "P"
+      ],
+      "category": "电解质与微量元素",
+      "loinc": "2777-1"
+    },
+    {
+      "standardName": "促甲状腺激素",
+      "aliases": [
+        "促甲状腺激素",
+        "TSH"
+      ],
+      "category": "甲状腺功能",
+      "loinc": "3016-3"
+    },
+    {
+      "standardName": "三碘甲状腺原氨酸",
+      "aliases": [
+        "三碘甲状腺原氨酸",
+        "总T3",
+        "总T3",
+        "T3"
+      ],
+      "category": "甲状腺功能",
+      "loinc": "3170-8"
+    },
+    {
+      "standardName": "甲状腺素",
+      "aliases": [
+        "甲状腺素",
+        "总T4",
+        "T4"
+      ],
+      "category": "甲状腺功能",
+      "loinc": "3024-7"
+    },
+    {
+      "standardName": "游离三碘甲状腺原氨酸",
+      "aliases": [
+        "游离三碘甲状腺原氨酸",
+        "游离T3",
+        "FT3"
+      ],
+      "category": "甲状腺功能",
+      "loinc": "3051-0"
+    },
+    {
+      "standardName": "游离甲状腺素",
+      "aliases": [
+        "游离甲状腺素",
+        "游离T4",
+        "FT4"
+      ],
+      "category": "甲状腺功能",
+      "loinc": "3026-2"
+    },
+    {
+      "standardName": "C反应蛋白",
+      "aliases": [
+        "C反应蛋白",
+        "C-反应蛋白",
+        "CRP",
+        "超敏C反应蛋白",
+        "hs-CRP"
+      ],
+      "category": "炎症指标",
+      "loinc": "1988-5"
+    },
+    {
+      "standardName": "血沉",
+      "aliases": [
+        "血沉",
+        "红细胞沉降率",
+        "ESR"
+      ],
+      "category": "炎症指标",
+      "loinc": "30313-1"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+/* ============================================================================
+   设计 token · 唯一来源
+   ----------------------------------------------------------------------------
+   全部数值取自 Ardot 设计文件的「03 · 视觉规范」屏，以及 01/02/04/05 四屏的
+   实际用值。改主题色 / 圆角 / 字号时**只改这里**，不要在组件里写魔数。
+
+   命名约定：
+     --c-*   色彩      --r-*  圆角      --sh-* 投影
+     --f-*   字体      --fs-* 字号      --h-/--w- 布局尺寸
+   ========================================================================== */
+
+:root {
+  /* ---------- 画面层级：底色 → 卡片 ---------- */
+  --c-canvas: #f1f2f4;   /* 页面底色（比卡片深一档，卡片才能"浮"起来） */
+  --c-surface: #ffffff;  /* 卡片面 */
+  --c-sunken: #f7f7fa;   /* 下凹面：左栏统计条 */
+  --c-muted: #f4f4f5;    /* 弱填充：搜索框、分段器轨道 */
+  --c-stripe: #fafafb;   /* 表头底 */
+  --c-foot: #fcfcfd;     /* 合计行底 */
+
+  /* ---------- 描边 ---------- */
+  --c-stroke: #eaebed;        /* 卡片描边（设计稿正式 token） */
+  --c-stroke-soft: #f0f1f2;   /* 面板内分隔线 */
+  --c-stroke-chrome: #ebebed; /* 顶栏/左栏外框 */
+  --c-stroke-btn: #d6d9de;    /* 次级按钮描边 */
+
+  /* ---------- 文字 ---------- */
+  --c-text: #0a1628;    /* 主文字墨 */
+  --c-text-2: #6b7280;  /* 次文字 */
+  --c-text-3: #9ca3af;  /* 弱文字 / 标签 */
+  --c-text-4: #c4c7cc;  /* 极弱：占位符「—」 */
+  --c-text-5: #b8bcc2;  /* 已核对等静默状态 */
+
+  /* ---------- 品牌 ---------- */
+  --c-brand: #014db2;
+  --c-brand-hover: #013e8f;
+  --c-brand-soft: #eaf1fb;  /* 品牌浅底（标签/徽标底，当前待用） */
+  --c-brand-tint: #e9f0fa;  /* 左栏选中项底 */
+
+  /* ---------- 语义色：只用数据状态，不做装饰 ---------- */
+  --c-high: #dc2626;      --c-high-soft: #fdf2f2;   /* 偏高（中国习惯：涨为红） */
+  --c-low: #0e7490;       --c-low-soft: #eefafc;    /* 偏低（青，刻意不用蓝） */
+  --c-ok: #059669;        --c-ok-soft: #ecfdf5;     /* 在范围内 */
+  --c-pending: #b45309;   --c-pending-soft: #fef8ec; /* 待核对 / 信息缺失 */
+
+  /* ---------- 圆角 ---------- */
+  --r-card: 14px;
+  --r-ctl: 8px;
+  --r-ctl-lg: 9px;
+  --r-field: 6px;
+  --r-pill: 999px;
+
+  /* ---------- 投影：双层才有真实高度感，单层淡影浮不起来 ---------- */
+  --sh-card: 0 2px 4px rgba(10, 22, 40, 0.08), 0 12px 28px rgba(10, 22, 40, 0.06);
+  --sh-pop: 0 20px 60px rgba(10, 22, 40, 0.18);
+
+  /* ---------- 字体 ---------- */
+  --f-sans: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  --f-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas,
+    'Courier New', monospace;
+
+  /* ---------- 字号（对齐规范屏字阶） ---------- */
+  --fs-h1: 24px;      /* H1 · Bold */
+  --fs-h2: 13px;      /* H2 · SemiBold */
+  --fs-body: 12.5px;  /* BODY · Regular */
+  --fs-num: 28px;     /* NUM · Mono SemiBold */
+  --fs-label: 10.5px; /* 标签 · Mono Medium */
+  --fs-mono-sm: 11px;
+
+  /* ---------- 布局 ---------- */
+  --h-topbar: 56px;
+  --h-mainhead: 60px;
+  --w-rail: 272px;
+}

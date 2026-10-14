@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="检验报告管理 —— 手工录入或导入检验报告，逐项核对后入档；参考范围只取自各报告原文，不跨报告套用统一阈值。"
+    />
+    <title>检验报告管理</title>
+
+    <!--
+      设计规范要求 Noto Sans SC（界面）+ JetBrains Mono（数值/标签）。
+      走 Google Fonts；若网络不可达，会自动回落到系统中文黑体（见 tokens.css 的字体栈），
+      字体缺失不会影响功能与排版可用性。
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

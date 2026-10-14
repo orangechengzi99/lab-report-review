@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.pytest-tmp/
+tests/.tmp/
+
+# Node
+node_modules/
+dist/
+
+# 数据与导出（真实数据绝不入库）
+data/private/
+data/raw/
+data/uploads/
+data/*.db
+*.db
+*.xlsx
+*.csv
+*.dcm
+*.nii
+*.nii.gz
+# 但保留演示样例（非真实数据）
+!backend/data/sample_lab_report.csv
+
+# 本地环境与编辑器
+.env
+.DS_Store
+.vscode/
+.idea/
+
+# Vite 开发期临时文件（启动时生成，机器相关，不入库）
+*.timestamp-*.mjs
+
+# Codex 本地整改记录（不属于产品源码）
+task_plan.md
+findings.md
+progress.md
