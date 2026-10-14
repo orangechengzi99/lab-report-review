@@ -136,6 +136,23 @@ export DEEPSEEK_VISION_MODEL=deepseek-flash   # 可选，默认就是 deepseek-f
 > 前端已配置 `/api` 代理，浏览器只访问 `http://localhost:5173` 即可。
 > 运行环境：Python 3.11+；Node.js 20.19+ 或 22.12+。
 
+### 方式一：一键启动（首次需先按「方式二」装好依赖）
+
+依赖装好后，用仓库根目录的脚本即可，无需每次手敲命令：
+
+| 系统 | 启动 | 停止 |
+|---|---|---|
+| Windows | 双击 `start.cmd` | 双击 `stop.cmd`，或直接关掉那两个服务窗口 |
+| macOS / Linux | `./start.sh` | 在该终端按 `Ctrl+C` |
+
+脚本会分别拉起后端与前端，并自动打开浏览器。Windows 下请保留弹出的
+`LabReportReview-Backend` / `LabReportReview-Frontend` 两个窗口，关闭即停止服务。
+
+> ⚠️ 同一端口同时只能有一个程序监听。若脚本报 `10048` 或
+> `Port ... already in use`，说明已有服务在跑 —— 先关掉旧窗口（或执行 `stop.cmd`）再启动。
+
+### 方式二：手动启动
+
 ### 后端（终端 1）
 
 ```bash

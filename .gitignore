@@ -13,10 +13,12 @@ node_modules/
 dist/
 
 # 数据与导出（真实数据绝不入库）
-data/private/
-data/raw/
-data/uploads/
-data/*.db
+# 注意：不要写 `data/uploads/` 这种带目录前缀的形式——带斜杠的规则会被
+# 锚定到仓库根，匹配不到 backend/data/uploads/，等于失效。用不带前缀的
+# 目录名（匹配任意层级）或 **/ 通配，才真正生效。
+uploads/
+private/
+raw/
 *.db
 *.xlsx
 *.csv
